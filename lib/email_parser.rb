@@ -12,6 +12,7 @@ class EmailParser
 
   def parse
     new_array = @list.split(" ")
+    new_array.each {|item| item == ","}
   #  if new_array == nil
   #    new_array = @list.split(",")
   #  end
