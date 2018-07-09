@@ -12,11 +12,7 @@ class EmailParser
 
   def parse
     new_array = @list.split(" ")
-    binding.pry
     result =  new_array.map {|item| if item !="," then item end}
-  #  if new_array == nil
-  #    new_array = @list.split(",")
-  #  end
     result.uniq
   end
 end
