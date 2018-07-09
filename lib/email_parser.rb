@@ -12,10 +12,9 @@ class EmailParser
 
   def parse
     new_array = @list.split(", ")
-    binding.pry
   #  if new_array == nil
   #    new_array = @list.split(",")
   #  end
-    new_array
+    new_array.uniq!
   end
 end
