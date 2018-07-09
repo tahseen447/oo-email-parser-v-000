@@ -16,6 +16,6 @@ class EmailParser
   #    new_array = @list.split(",")
   #  end
   binding.pry
-    new_array.uniq!
+    new_array.uniq
   end
 end
