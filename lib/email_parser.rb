@@ -11,11 +11,11 @@ class EmailParser
   end
 
   def parse
-    new_array = @list.split(" ")
+    new_array = @list.split(", ")
     binding.pry
-    if new_array == nil
-      new_array = @list.split(",")
-    end
+  #  if new_array == nil
+  #    new_array = @list.split(",")
+  #  end
     new_array
   end
 end
