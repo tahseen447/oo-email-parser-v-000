@@ -15,6 +15,7 @@ class EmailParser
   #  if new_array == nil
   #    new_array = @list.split(",")
   #  end
+  binding.pry
     new_array.uniq!
   end
 end
