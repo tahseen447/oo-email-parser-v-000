@@ -8,6 +8,11 @@ class EmailParser
   def initialize(list)
     @list = list
   end
+
   def parse
+    new_array = @list.split(" ")
+    if new_array == nil
+      new_array = @list.split(",")
+    end
   end
 end
