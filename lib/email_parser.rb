@@ -14,7 +14,7 @@ class EmailParser
     new_array = @list.split(" ")
     binding.pry
     new_array.map! {|item| item.chomp(",")}
-    result =  new_array.map {|item| if item !="," then item end}
-    result.uniq
+    new_array.map! {|item| if item !="," then item end}
+    new_array.uniq
   end
 end
